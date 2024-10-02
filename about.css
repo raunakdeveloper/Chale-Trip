@@ -29,10 +29,10 @@ body {
 }
 
 .navbar-nav {
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
-
 .navbar-nav .nav-item {
     margin: 0 1rem;
 }

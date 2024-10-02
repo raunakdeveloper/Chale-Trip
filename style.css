@@ -29,7 +29,8 @@ body {
 }
 
 .navbar-nav {
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
@@ -207,5 +208,8 @@ a {
 
     .aboutTrip p {
         font-size: small;
+    }
+    .hero-section {
+        margin-top: 1rem;
     }
 }

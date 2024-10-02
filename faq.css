@@ -20,7 +20,8 @@ html, body {
 }
 
 .navbar-nav {
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
