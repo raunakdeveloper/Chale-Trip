@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 1rem;
+}
+
+.btn-outline-warning {
+    border-color: #ada8a2;
+    color: #797979;
+}
+
+.lead {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    user-select: none;
+}
+
+.footer-name {
+    color: #1E90FF;
+    font-weight: 500;
+}
+
+.accordion-button {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #0f0f0f;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.faq-section .accordion-header button[aria-expanded="true"] {
+    color: #1E90FF;
+}
+
+.faq-section h5.accordion-header button {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.faq-section .accordion-body {
+    font-size: 0.8rem;
+}
+
+.faq-section .accordion-header button {
+    color: #0f0f0f;
+    transition: color 0.3s ease;
+}
+
+.faq-section .accordion-header button[aria-expanded="true"] {
+    color: #1E90FF;
+}
+
+.faq-section .accordion-body {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+.faq-section .accordion-header button:hover {
+    background-color: #f8f9fa; 
+}
+
+.faq-section .accordion-header button {
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+}
+
+.faq-section .accordion-body {
+    padding: 0.75rem 1rem;
+}

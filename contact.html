@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chale Trip</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+     <!-- Nav Bar -->
+     <nav id="home" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand brand-name user-select-none" href="#home">Chale Trip</a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="act nav-link user-select-none" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link user-select-none" href="#package">Package</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link user-select-none" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link user-select-none active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search" style="justify-content: center;">
+                    <button type="button" class="BookBtnTop btn btn-primary"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"><a
+                            class="text-decoration-none text-white"
+                            href="https://wa.me/917389451139?text=Hello%20Chale%20Trip%20Team!%20I%20am%20interested%20in%20booking%20the%20Nainital%20Yatra%20package.%20Please%20provide%20me%20with%20more%20details%20on%20how%20to%20proceed%20with%20the%20booking.%20Thanks!"
+                            target="_blank">Book &nbsp; &nbsp;<i class="ri-arrow-right-line"></i></a>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- nav- bar end  -->
+
+    <!-- hero section  -->
+    <div class="px-4 pt-5 my-2 text-center">
+        <h1 id="contact" class="display-6 fw-bold">Contact Us</h1>
+        <div class="col-lg-8 mx-auto">
+            <p class="container lead mb-4">We'd love to hear from you! Get in touch with us for any queries about our
+                trips or services.</p>
+        </div>
+    </div>
+    <!-- hero section end  -->
+
+    <!-- main section -->
+    <div id="contact" class="container px-5 mt-5 mb-5 col-lg-8">
+        <form id="contactForm" action="#" method="POST" class="mx-auto mt-4 max-w-xl">
+            <div class="row g-3">
+                <!-- Name -->
+                <div class="col-md-6">
+                    <label for="name" class="form-label fw-semibold">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter name" required>
+                </div>
+                <!-- Phone number -->
+                <div class="col-md-6">
+                    <label for="phonenumber" class="form-label fw-semibold">Phone Number</label>
+                    <input type="tel" name="phonenumber" id="phonenumber" class="form-control"
+                        placeholder="Phone Number" pattern="[0-9]{10}" maxlength="10"
+                        title="Phone number must be exactly 10 digits" required>
+                </div>
+                <!-- Email -->
+                <div class="col-12">
+                    <label for="email" class="form-label fw-semibold">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                </div>
+                <!-- Message -->
+                <div class="col-12">
+                    <label for="message" class="form-label fw-semibold">Message</label>
+                    <textarea name="message" id="message" rows="4" class="form-control" placeholder="Your message"
+                        style="resize: none;" required></textarea>
+                </div>
+                <!-- Submit Button -->
+                <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Thank You Modal -->
+    <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="thankYouModalLabel">Thank You!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Thank you for contacting us! We will get back to you soon.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4" style="background-color: #F8F9FA;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <h2 class="footer-heading"></h2>
+                    <p class="menu mb-3">
+                        <a href="index.html" class="text-dark mx-2">Home</a>
+                        <a href="about.html" class="text-dark mx-2">About</a>
+                        <a href="faq.html" class="text-dark mx-2">FAQ</a>
+                        <a href="#contact" class="text-dark mx-2">Contact</a>
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li class="mx-2">
+                            <a href="https://twitter.com/chaletrip" class="text-dark" data-bs-toggle="tooltip"
+                                title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="mx-2">
+                            <a href="mailto:chaletrip0@gmail.com" class="text-dark" data-bs-toggle="tooltip"
+                                title="Gmail">
+                                <i class="fas fa-envelope"></i> <!-- Use the envelope icon for Gmail -->
+                            </a>
+                        </li>
+                        <li class="mx-2">
+                            <a href="https://www.facebook.com/people/Chale-Trip/pfbid0Nn1TK2DswFLppJC7VYkLBcm4XeptP4MM2BHeKxAxDaemv1qJwbFRqDfhbr85adjAl/"
+                                class="text-dark" data-bs-toggle="tooltip" title="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="mx-2">
+                            <a href="https://www.instagram.com/chale.trip/" class="text-dark" data-bs-toggle="tooltip"
+                                title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="mx-2">
+                            <a href="https://www.youtube.com/@chaletrip" class="text-dark" data-bs-toggle="tooltip"
+                                title="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; All rights reserved <a href="index.html" target="_blank"
+                            class="footer-name">Chale Trip</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>
